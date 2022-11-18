@@ -26,20 +26,13 @@ header {
 }
 
 main {
-    flex-grow: 1;
     background-color: #94B9AF;
 
-
     display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .mainContent {
-    width: 100%;
-
     display: flex;
-    justify-content: space-evenly;
     flex-grow: 1;
 }
 
@@ -49,33 +42,36 @@ main {
     justify-content: stretch;
     align-items: flex-start;
 
-    flex-grow: 0.2;
     padding: 2%;
+    flex-grow: 1;
 }
 
 #cadastrarDica>* {
     width: 100%;
 }
+
 #cadastrarDica>div {
     display: flex;
     justify-content: space-between;
-    
+
     padding: 2%;
 }
-#divCards{
+
+#divCards {
     display: flex;
     flex-direction: column;
-    align-items:stretch;
 
-    flex-grow: 0.5;
+    flex-grow: 2;
 }
-#cardsData{
+
+#cardsData {
     display: flex;
     justify-content: space-evenly;
-    
+
     padding: 2%;
 }
-#cardsData>div{
+
+#cardsData>div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -86,30 +82,74 @@ main {
 
     background-color: #475898;
 }
-#divCards>input{
+
+#divCards>input {
     margin: 0 20% 0 20%;
 }
 
-#cards{
-    /* fazer em grid */
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+#cardsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2%;
+
+    overflow: auto;
 
     padding: 2%;
-    margin: 2%;
+    margin: 2%;   
 }
-#cards>div{
+
+.card {
+    font-size: 90%;
+
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
 
-    border-radius: 0.5rem;
+    border-radius: 0.3rem;
     padding: 2%;
 
-    background-color:aliceblue
+    /* word-wrap: break-word; */
+    
+    overflow-wrap: break-word;
+    min-width: 200px;
+    max-width: 200px;
+    min-height: 400px;
+    max-height: 400px;
+
+    padding: 0;
+    background-color: aliceblue;
 }
+
+.cardHeader {
+    /* melhorar disposição de info */
+    padding: 2%;
+    /*mexer no h4*/
+
+    background-color: #475898;
+    background: linear-gradient(180deg, rgba(71, 88, 152, 1) 0%, rgba(87, 108, 186, 1) 50%, rgba(118, 146, 255, 1) 100%);
+}
+
+.cardMain {
+    flex-grow:1;
+
+    padding: 2%;
+    overflow-y: auto;
+}
+
+.cardFooter {
+    display: flex;
+
+    justify-content: flex-end;
+    padding: 2%;
+}
+
+.cardFooter button {
+    border-radius: 0.5rem;
+
+    background-color: rgb(225, 232, 238);
+    /* outline-color: rgba(0, 0, 0, 0); */
+}
+
 
 footer {
     bottom: 0;
