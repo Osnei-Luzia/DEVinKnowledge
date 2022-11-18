@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" type="module" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- FAZER FAVICON -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>DEVinKnowledge</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>DEVinKnowledge</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="mainContent">
+            <form id="cadastrarDica">
+                <label for="formTitulo">Título:</label>
+                <input type="text" id="formTitulo" required minlength="8" maxlength="64">
+                <label for="formLinguagem">Linguagem/Skill:</label>
+                <input type="text" id="formLinguagem" required minlength="2" maxlength="16">
+                <label for="formCategoria">Categoria:</label>
+                <select id="formCategoria" required>
+                    <option value="">
+                        Selecione uma Categoria
+                    </option>
+                    <option value="FrontEnd">
+                        FrontEnd
+                    </option>
+                    <option value="BackEnd">
+                        BackEnd
+                    </option>
+                    <option value="FullStack">
+                        FullStack
+                    </option>
+                    <option value="Comportamental/Soft">
+                        Comportamental/Soft
+                    </option>
+                </select>
+                <label for="formDescricao">Descrição:</label>
+                <textarea style="resize: none" id="formDescricao" required minlength="16" maxlength="512"></textarea>
+                <label for="formMedia">Vídeo:</label>
+                <input type="url" id="formMedia">
+                <div>
+                    <button type="submit">
+                        Salvar
+                    </button>
+                    <button type="reset">
+                        Limpar
+                    </button>
+                </div>
+            </form>
+            <div id="divCards">
+                <section id="cardsData">
+                    <div>
+                        <h4>Total</h4>
+                        <span class="cardData">0</span>
+                    </div>
+                    <div>
+                        <h4>FrontEnd</h4>
+                        <span class="cardData">0</span>
+                    </div>
+                    <div>
+                        <h4>BackEnd</h4>
+                        <span class="cardData">0</span>
+                    </div>
+                    <div>
+                        <h4>FullStack</h4>
+                        <span class="cardData">0</span>
+                    </div>
+                    <div>
+                        <h4>Comportamental/Soft</h4>
+                        <span class="cardData">0</span>
+                    </div>
+                </section>
+                <input type="text" id="pesquisaCard" placeholder="Pesquisar Cartões por Título">
+                <section id="cardsGrid">
+
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        teste
+    </footer>
+</body>
+
+</html>
