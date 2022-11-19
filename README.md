@@ -9,49 +9,49 @@ O DEVinKnowledge organiza suas dicas de programação em cartões. Possibilitand
 
 
 1. [Criação](#criacao)
-2. [Alteração](#edicao)
+2. [Edição](#edicao)
 3. [Remoção](#remocao)
 4. [Navegação](#navegacao)
 5. [Midia](#midia)
 6. [Dados](#dados)
 
 <a  id="criacao"></a> 
-###Criação
-Para criar cartões, preencha os campos obrigatórios do formulário: Título, Linguagem, Categoria e Descrição.
-<img src="formulario.png">
+### Criação
+Para criar cartões, preencha os campos obrigatórios do formulário: Título, Linguagem, Categoria e Descrição.<br>
+<img src="https://github.com/Osnei-Luzia/DEVinKnowledge/blob/main/projeto/imagens/formulario.png" width="300"><br>
 
-Agora você pode "Salvar" o cartão, apenas confirme os dados enviados ou limpar o formulário para novo cadastro.
-<img src="formularioBotoes.png">
+Agora você pode "Salvar" o cartão, apenas confirme os dados enviados ou limpar o formulário para novo cadastro.<br>
+<img src="https://github.com/Osnei-Luzia/DEVinKnowledge/blob/main/projeto/imagens/formularioBotoes.png" width="300"><br>
 
-Existe também a possibilidade de adicionar uma URL direcionando para um vídeo.
+Existe também a possibilidade de adicionar uma URL direcionando para um vídeo.<br>
 <a  id="edicao"></a>
-###Edição
-A edição é realizada através do botão "Editar" em cada cartão. Suas informações serão transferidas para o formulário.
-<img src="editar.png">
+### Edição
+A edição é realizada através do botão "Editar" em cada cartão. Suas informações serão transferidas para o formulário.<br>
+<img src="https://github.com/Osnei-Luzia/DEVinKnowledge/blob/main/projeto/imagens/editar.png" width="300"><br>
 Agora o formulário poderá confirmar a edição no botão "Editar" se todos os campos ainda cumprirem os requerimentos ou cancelar a edição no botão "Cancelar", que limpará o formulário.
 
 <a  id="remocao"></a>
-###Remoção
-A remoção também é feita diretamente nos cartões, no botão "Deletar".
-<img src="deletar.png">
+### Remoção
+A remoção também é feita diretamente nos cartões, no botão "Deletar".<br>
+<img src="https://github.com/Osnei-Luzia/DEVinKnowledge/blob/main/projeto/imagens/deletar.png" width="300"><br>
 
 <a  id="navegacao"></a>
-###Navegação
-A navegação é feita por Título dos cartões pela barra de pesquisa:
-<img src="pesquisa.png">
-A cada letra digitada novos cartões que possuem um Título que abrange a sequência de letras ira aparecer logo abaixo da barra de pesquisa.
-<img src="cartoes.png">
+### Navegação
+A navegação é feita por Título dos cartões pela barra de pesquisa:<br>
+<img src="https://github.com/Osnei-Luzia/DEVinKnowledge/blob/main/projeto/imagens/pesquisa.png" width="500"><br>
+A cada letra digitada novos cartões que possuem um Título que abrange a sequência de letras ira aparecer logo abaixo da barra de pesquisa.<br>
+<img src="https://github.com/Osnei-Luzia/DEVinKnowledge/blob/main/projeto/imagens/cartoes.png" width="500"><br>
 Caso haja muitas cartões, eles se organizaram com uma barra de rolagem.
 
 <a id="midia"></a>
-###Mídia
-Algumas dicas poderão ter sido criadas com uma URL, estás terão um botão a mais para acesso do vídeo.
-<img src="midia.png">
+### Mídia
+Algumas dicas poderão ter sido criadas com uma URL, estás terão um botão a mais para acesso do vídeo.<br>
+<img src="https://github.com/Osnei-Luzia/DEVinKnowledge/blob/main/projeto/imagens/midia.png" width="300"><br>
 
 <a id="dados"></a>
-###Dados
-O DEVinKnowledge também mostra a quantidade de cartões organizados por categorias.
-<img src="dados.png">
+### Dados
+O DEVinKnowledge também mostra a quantidade de cartões organizados por categorias.<br>
+<img src="https://github.com/Osnei-Luzia/DEVinKnowledge/blob/main/projeto/imagens/dados.png" width="500"><br>
 
 ## Tecnologias
 
@@ -97,8 +97,8 @@ npm start
 ### Live Server
 O Live Server pode ser instalado diretamente do seu VSCode pela aba de extensões.
 Após a instalação deve-se editar suas configurações de leitura de arquivos. Clique na engrenagem ao lado de "Uninstall" e em seguida "Configurações de Aplicação"
-Em seguida procure por "ignore" e edite o "settings.json"
-<img src="liveServerConfig.png">
+Em seguida procure por "ignore" e edite o "settings.json"<br>
+<img src="https://github.com/Osnei-Luzia/DEVinKnowledge/blob/main/projeto/imagens/liveServerConfig.png">
 Adicione dentro de "liveServer.settings.ignoreFiles" o caminho para seu JSON Server e todas seus arquivos
 ```
 {
