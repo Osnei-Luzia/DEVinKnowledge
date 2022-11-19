@@ -98,7 +98,7 @@ npm start
 O Live Server pode ser instalado diretamente do seu VSCode pela aba de extensões.
 Após a instalação deve-se editar suas configurações de leitura de arquivos. Clique na engrenagem ao lado de "Uninstall" e em seguida "Configurações de Aplicação"
 Em seguida procure por "ignore" e edite o "settings.json"<br>
-<img src="https://github.com/Osnei-Luzia/DEVinKnowledge/blob/main/projeto/imagens/liveServerConfig.png">
+<img src="https://github.com/Osnei-Luzia/DEVinKnowledge/blob/main/projeto/imagens/liveServerConfig.png"><br>
 Adicione dentro de "liveServer.settings.ignoreFiles" o caminho para seu JSON Server e todas seus arquivos
 ```
 {
