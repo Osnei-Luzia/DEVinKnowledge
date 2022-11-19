@@ -1,41 +1,18 @@
-export default function formFactory(formCard){
-    formCard = 
-    `<form id="editarDica">
-        <label for="formTitulo">Título:</label>
-        <input type="text" id="formTitulo" required minlength="8" maxlength="64">
-            <label for="formLinguagem">Linguagem/Skill:</label>
-            <input type="text" id="formLinguagem" required minlength="2" maxlength="16">
-                <label for="formCategoria">Categoria:</label>
-                <select id="formCategoria" required>
-                    <option value="">
-                        Selecione uma Categoria
-                    </option>
-                    <option value="FrontEnd">
-                        FrontEnd
-                    </option>
-                    <option value="BackEnd">
-                        BackEnd
-                    </option>
-                    <option value="FullStack">
-                        FullStack
-                    </option>
-                    <option value="Comportamental/Soft">
-                        Comportamental/Soft
-                    </option>
-                </select>
-                <label for="formDescricao">Descrição:</label>
-                <textarea style="resize: none" id="formDescricao" required minlength="16" maxlength="512"></textarea>
-                <label for="formMedia">Vídeo:</label>
-                <input type="url" id="formMedia">
-                    <div>
-                        <button type="submit">
-                            Salvar
-                        </button>
-                        <button type="reset">
-                            Limpar
-                        </button>
-                    </div>
-    </form>
-    `
+export default function formFactory(cartao){
+    const form = document.getElementById("cadastrarDica")
+    form.formTitulo.value = cartao.titulo
+    form.formLinguagem.value = cartao.linguagem
+    form.formCategoria.value = cartao.categoria
+    form.formDescricao.value = cartao.descricao
+    form.formMedia.value = cartao.media
+    form.submit.innerText = "Editar"
+    form.clear.innerText = "Cancelar"
+    document.getElementById("clear").addEventListener("click",cancela)
+    form.cardId.value = cartao.id
+
+    function cancela(){
+        form.submit.innerText = "Salvar"
+        form.clear.innerText = "Limpar"
+    }
 }
 

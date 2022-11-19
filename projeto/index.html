@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js" type="module" defer></script>
     <link rel="stylesheet" href="style.css">
-    <!-- FAZER FAVICON -->
+	<link rel="icon" href="imagens/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <title>DEVinKnowledge</title>
 </head>
@@ -23,9 +23,9 @@
         <div class="mainContent">
             <form id="cadastrarDica">
                 <label for="formTitulo">Título:</label>
-                <input type="text" id="formTitulo" required minlength="8" maxlength="64">
+                <input type="text" id="formTitulo" required placeholder="Nome para a Dica" minlength="8" maxlength="64">
                 <label for="formLinguagem">Linguagem/Skill:</label>
-                <input type="text" id="formLinguagem" required minlength="2" maxlength="16">
+                <input type="text" id="formLinguagem" placeholder="JavaScript, SQL" required minlength="2" maxlength="16">
                 <label for="formCategoria">Categoria:</label>
                 <select id="formCategoria" required>
                     <option value="">
@@ -45,17 +45,18 @@
                     </option>
                 </select>
                 <label for="formDescricao">Descrição:</label>
-                <textarea style="resize: none" id="formDescricao" required minlength="16" maxlength="512"></textarea>
+                <textarea style="resize: none" id="formDescricao" required placeholder="Descreva sua dica" minlength="16" maxlength="512"></textarea>
                 <label for="formMedia">Vídeo:</label>
-                <input type="url" id="formMedia">
+                <input type="url" id="formMedia" placeholder="https://www.youtube.com/">
                 <div>
-                    <button type="submit">
+                    <button id="submit" type="submit">
                         Salvar
                     </button>
-                    <button type="reset">
+                    <button id="clear" type="reset">
                         Limpar
                     </button>
                 </div>
+                <input hidden id="cardId">
             </form>
             <div id="divCards">
                 <section id="cardsData">
@@ -89,7 +90,7 @@
     </main>
 
     <footer>
-        teste
+        Osnei Gabriel Luzia - 2022
     </footer>
 </body>
 
