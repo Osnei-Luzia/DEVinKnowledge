@@ -24,7 +24,8 @@ O DEVinKnowledge organiza suas dicas de programação em cartões. Possibilitand
 
 <a  id="criacao"></a> 
 ### Criação
-Para criar cartões, preencha os campos obrigatórios do formulário: Título, Linguagem, Categoria e Descrição.<br>
+Para criar cartões, preencha os campos obrigatórios do formulário: Título, Linguagem, 
+e Descrição.<br>
 <img src="https://github.com/Osnei-Luzia/DEVinKnowledge/blob/main/projeto/imagens/formulario.png" width="300"><br>
 
 Agora você pode "Salvar" o cartão, apenas confirme os dados enviados ou limpar o formulário para novo cadastro.<br>
@@ -48,16 +49,16 @@ A navegação é feita por Título dos cartões pela barra de pesquisa:<br>
 <img src="https://github.com/Osnei-Luzia/DEVinKnowledge/blob/main/projeto/imagens/pesquisa.png" width="500"><br>
 A cada letra digitada novos cartões que possuem um Título que abrange a sequência de letras ira aparecer logo abaixo da barra de pesquisa.<br>
 <img src="https://github.com/Osnei-Luzia/DEVinKnowledge/blob/main/projeto/imagens/cartoes.png" width="500"><br>
-Caso haja muitas cartões, eles se organizaram com uma barra de rolagem.
+Caso haja muitos cartões, eles se organizaram com uma barra de rolagem.
 
 <a id="midia"></a>
 ### Mídia
-Algumas dicas poderão ter sido criadas com uma URL, estás terão um botão a mais para acesso do vídeo.<br>
+Algumas dicas poderão ter sido criadas com uma URL, estás terão um botão a mais para acesso ao vídeo.<br>
 <img src="https://github.com/Osnei-Luzia/DEVinKnowledge/blob/main/projeto/imagens/midia.png" width="300"><br>
 
 <a id="dados"></a>
 ### Dados
-O DEVinKnowledge também mostra a quantidade de cartões organizados por categorias.<br>
+O DEVinKnowledge também mostra a quantidade de cartões, organizado por categorias.<br>
 <img src="https://github.com/Osnei-Luzia/DEVinKnowledge/blob/main/projeto/imagens/dados.png" width="500"><br>
 
 <a id="tech"></a>
