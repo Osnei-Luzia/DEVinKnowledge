@@ -3,6 +3,13 @@
 
 DEVinKnowledge é uma aplicação web para armazenamento de informações para Base do Conhecimento relacionada a programação.
 
+### Sumário
+
+1. [Funções](#funcoes)
+2. [Tecnologias](#tech)
+3. [Instalação](#instal)
+
+<a id="funcoes"></a>
 ## Funções
 
 O DEVinKnowledge organiza suas dicas de programação em cartões. Possibilitando Criação, Remoção e Edição de informações de forma dinâmica.
@@ -53,12 +60,14 @@ Algumas dicas poderão ter sido criadas com uma URL, estás terão um botão a m
 O DEVinKnowledge também mostra a quantidade de cartões organizados por categorias.<br>
 <img src="https://github.com/Osnei-Luzia/DEVinKnowledge/blob/main/projeto/imagens/dados.png" width="500"><br>
 
+<a id="tech"></a>
 ## Tecnologias
 
 É utilizado para seu funcionamento:
 - [Live.Server] - Servidor Local para Desenvolvimento com recarregamentos em tempo real.
 - [JSON.Server] - REST API para testes.
 
+<a id="instal"></a>
 ## Instalação
 
 1. [JSONServer](#jsonServer)
