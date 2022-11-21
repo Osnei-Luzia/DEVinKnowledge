@@ -89,6 +89,17 @@ main {
     /* background-color: #475898; */
     background: linear-gradient(200deg, rgba(58, 23, 114, 1) 0%, rgba(87, 108, 186, 1) 50%, rgba(118, 146, 255, 1) 100%);
 }
+#cardsData>div:hover{
+    color: white;
+}
+#clickCategoria{
+    color: white;
+    pointer-events:none;
+}
+#clickCategoria~span{
+    color: white;
+    pointer-events:none;
+}
 
 #divCards>input {
     margin: 0 20% 0 20%;

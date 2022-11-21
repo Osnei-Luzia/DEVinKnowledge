@@ -8,10 +8,14 @@ export async function postDicas(conteudo) {
     })
 }
 
-export async function getDicas(args = "") {
+export async function getDicas(args = "", categoria = "") {
     const result = await fetch(`http://localhost:3000/dicas/`)
     const busca = await result.json()
-    return busca.filter(card => card.titulo.toUpperCase().includes(args.toUpperCase()))
+    if (categoria == "Total") {
+        return busca.filter(card => card.titulo.toUpperCase().includes(args.toUpperCase()))
+    } else {
+        return busca.filter(card => card.titulo.toUpperCase().includes(args.toUpperCase()) && card.categoria == categoria)
+    }
 }
 
 export async function getDicasID(args = "") {
@@ -20,7 +24,7 @@ export async function getDicasID(args = "") {
     return busca.find(card => card.id == args)
 }
 
-export async function editDicas(conteudo,cardId) {
+export async function editDicas(conteudo, cardId) {
     await fetch(`http://localhost:3000/dicas/${cardId}`, {
         method: `PUT`,
         headers: new Headers({

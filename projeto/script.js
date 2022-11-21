@@ -33,8 +33,17 @@ async function deletarDica(evento) {
     }
 }
 
+function selectCategoria(evento){
+    document.getElementById("clickCategoria").id = ""
+    evento.target.firstElementChild?
+    evento.target.firstElementChild.id = "clickCategoria":evento.target.parentNode.firstElementChild.id = "clickCategoria";
+    atualizaCards()
+}
+
 async function atualizaCards(valor) {
-    const result = await CRUD.getDicas(valor)
+    let categoria = ""
+    categoria = document.getElementById("clickCategoria").innerText
+    const result = await CRUD.getDicas(document.getElementById("pesquisaCard").value,categoria)
     document.getElementById("cardsGrid").innerHTML = ""
     result.forEach((cartao) => {
         const card = cardFactory(cartao)
@@ -46,7 +55,7 @@ async function atualizaCards(valor) {
 
 async function statusCards(evento) {
     const categorias = document.getElementsByClassName("cardData")
-    const result = await CRUD.getDicas()
+    const result = await CRUD.getDicas("","Total")
     result.forEach((card) => {
         switch (card.categoria) {
             case 'FrontEnd':
@@ -70,4 +79,8 @@ document.getElementById("cadastrarDica").reset();
 window.addEventListener("load", () => { atualizaCards(document.getElementById("pesquisaCard").value) })
 window.addEventListener("load", statusCards)
 document.getElementById("cadastrarDica").addEventListener("submit", cadastrarDica)
-document.getElementById("pesquisaCard").addEventListener("keyup", () => { atualizaCards(document.getElementById("pesquisaCard").value) })
+document.getElementById("pesquisaCard").addEventListener("keyup", () => { atualizaCards() })
+
+for(let cont=0; cont<document.getElementsByClassName("dataCategoria").length;cont++){
+    document.getElementsByClassName("dataCategoria")[cont].addEventListener("click",selectCategoria)
+}

@@ -49,7 +49,11 @@ A navegação é feita por Título dos cartões pela barra de pesquisa:<br>
 <img src="https://github.com/Osnei-Luzia/DEVinKnowledge/blob/main/projeto/imagens/pesquisa.png" width="500"><br>
 A cada letra digitada novos cartões que possuem um Título que abrange a sequência de letras ira aparecer logo abaixo da barra de pesquisa.<br>
 <img src="https://github.com/Osnei-Luzia/DEVinKnowledge/blob/main/projeto/imagens/cartoes.png" width="500"><br>
-Caso haja muitos cartões, eles se organizaram com uma barra de rolagem.
+Caso haja muitos cartões, eles se organizarão com uma barra de rolagem.
+
+Existe também a possibilidade de filtrar por categorias, simplesmente clicando nos quadros a cima da barra de pesquisa.<br>
+<img src="https://github.com/Osnei-Luzia/DEVinKnowledge/blob/main/projeto/imagens/categorias.png" width="500"><br>
+
 
 <a id="midia"></a>
 ### Mídia
